@@ -20,6 +20,9 @@
   width: 100%;
 }
 
+
+
+
 h5 {
   color:coral;
 }
@@ -697,11 +700,13 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 #fname {
   background-color: white;
   border: 1px solid #00939B;
+  color: #00939B;
 }
 
 #lname {
   background-color: white;
   border: 1px solid #00939B;
+  color: #00939B;
 }
 /*Style Testimonials*/
 .testimonial1 {
