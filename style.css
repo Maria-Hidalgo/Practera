@@ -27,10 +27,279 @@ h5 {
   color:coral;
 }
 
+h1.main-title {
+  font-size: 45px;
+  font-weight: bold;
+  color: #ee7427;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Bebas Neue';
+}
+
 /*End Nav-Bar Style */
 
+/*Another*/
 
 
+/*End Another*/
+
+
+/*Style Cards Why 10 Weeks?*/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4em;
+  color: #333;
+  background: #eee;
+  
+  background-position: center center;
+}
+
+h1 {
+  margin: 0.5em 0 1em 0;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #096AA3;
+}
+
+h2{
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.animation {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.pageTitle sup
+{
+  font-size: .6em;
+  color: #333;
+}
+.well {
+  padding: 3%;
+  margin: 20px auto;
+  border:none;
+  text-align: center;
+}
+.well p
+{
+  font-weight: 300;
+}
+.content p
+{   
+  font-weight: 300;
+}
+.cardContainer 
+{
+ 
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+
+  
+  /*depth of the elements */
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+
+  /*border: 1px solid #ff0000;*/
+  padding-left: 1%;
+}
+.secondRow
+{
+  margin-top: -1.4%
+}
+
+.card 
+{
+  width: 99%;
+  height: 450px;
+  cursor: pointer;
+  
+  /*transition effects */
+  -webkit-transition: -webkit-transform 0.6s;
+  -moz-transition: -moz-transform 0.6s;
+  -o-transition: -o-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.card.flipped 
+{
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+
+.card .front,
+.card .back {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 60px;
+  color: white;
+  text-align: center;
+  font-size: 4em;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 3px 5px 20px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.card .back {
+  width: 100%;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-size: 16px;
+  text-align: left;
+  line-height: 25px;
+}
+
+.card .back {
+  background: #03446A;
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+/*Colors for front and back applied here*/
+.cardContainer:first-child .card .front {
+  background: #00939B;
+}
+
+.cardContainer:first-child .card .back {
+  background: #00939B;
+}
+
+.cardContainer:nth-child(2) .card .front {
+  background: #ee7427;
+}
+.cardContainer:nth-child(2) .card .back {
+  background: #ee7427;
+}
+
+.cardContainer:nth-child(3) .card .front {
+  background: #00939B;
+}
+.cardContainer:nth-child(3) .card .back {
+  background: #00939B;
+}
+
+.cardContainer:nth-child(4) .card .front 
+{
+  background:#ee7427;
+}
+.cardContainer:nth-child(4) .card .back 
+{
+  background: #ee7427;
+}
+
+
+
+h4.cardTitle {
+  line-height: 1.2em;
+  margin-top: 8%;
+  font-weight: 600;
+}
+.content h4.cardTitle
+{
+  margin-top: 0%;
+}
+
+.content {
+  padding: 0%;
+  font-weight: 100;
+  text-align: left;
+  font-weight: bold;
+}
+
+@media all and (max-width: 1000px){
+  h3.cardTitle{
+      font-weight: 500;
+       
+  }
+  .content p
+  {
+    margin-top: -15%;
+    line-height: 1.2em;
+  }
+  
+  .card
+  {
+   height:175px;
+  }
+
+}
+@media all and (max-width : 752px) {
+ 
+  .secondRow
+  {
+    margin-top: -3%;
+  }
+  .cardContainer:nth-child(3),.cardContainer:nth-child(4)
+  {
+    margin-top: 3%;
+  }
+
+}
+@media all and (max-width : 390px) {
+ 
+  .card
+  {
+  width:100%;
+  height:150px;
+  }
+  .secondRow
+  {
+    margin-top: -9%;
+  }
+  .well 
+  {
+  padding: 1%;
+  }
+   .cardContainer:nth-child(3),.cardContainer:nth-child(4)
+  {
+    margin-top: 5%;
+  }
+  h3.cardTitle
+  {
+   font-weight: 500;     
+  }
+  .content p
+  {
+    margin-top: -20%;
+    line-height: 1.2em;
+  }
+  .cardWrapper
+  {
+    margin-left: 4%;
+  }
+
+}
+
+/*End Style Cards Why 10 Weeks?*/
 
 /*Image Style */
 .image {
@@ -172,8 +441,14 @@ img {
 }
 
 .title {
+  font-size: 150;
+  font-weight: bold;
+  color: #ee7427;
+ 
   text-align: center;
-  font-size: 20;
+  font-family: 'Bebas Neue';
+
+
 }
 /*End Form Style */
 
@@ -314,6 +589,7 @@ figure img{width:300px;}
 
 .item-box-blog-image {
   position: relative;
+  
 }
 
 .item-box-blog-image figure img {
@@ -383,3 +659,45 @@ figure img{width:300px;}
 }
 
 /* End Card-Carousel Style */
+
+
+/*Style Footer*/
+.col_white_amrc { color:#FFF;}
+footer { width:100%; background-color:#263238; min-height:100px; padding:10px 0px 25px 0px ;}
+.pt2 { padding-top:40px ; margin-bottom:20px ;}
+footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
+.mb10 { padding-bottom:15px ;}
+.footer_ul_amrc { margin:0px ; list-style-type:none ; font-size:14px; padding:0px 0px 10px 0px ; }
+.footer_ul_amrc li {padding:0px 0px 5px 0px;}
+.footer_ul_amrc li a{ color:#CCC;}
+.footer_ul_amrc li a:hover{ color:#fff; text-decoration:none;}
+.fleft { float:left;}
+.padding-right { padding-right:10px; }
+
+.footer_ul2_amrc {margin:0px; list-style-type:none; padding:0px;}
+.footer_ul2_amrc li p { display:table; }
+.footer_ul2_amrc li a:hover { text-decoration:none;}
+.footer_ul2_amrc li i { margin-top:5px;}
+
+.bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px;}
+.foote_bottom_ul_amrc {
+	list-style-type:none;
+	padding:0px;
+	display:table;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+.foote_bottom_ul_amrc li { display:inline;}
+.foote_bottom_ul_amrc li a { color:#999; margin:0 12px;}
+
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+.img_footer {
+  height: 60%;
+  width: 60%;
+}
+/*End Style Footer*/
