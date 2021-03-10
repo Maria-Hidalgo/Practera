@@ -38,10 +38,12 @@ h1.main-title {
 /*End Nav-Bar Style */
 
 /*Style Cards Why 10 Weeks?*/
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);
+/*@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700);*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Montserrat', serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.4em;
@@ -291,7 +293,7 @@ h4.cardTitle {
 /*End Style Cards Why 10 Weeks?*/
 
 /*Image Style */
-.image {
+.Image {
   width: 100%;
   margin-top: auto;
   height: auto;
@@ -385,6 +387,7 @@ margin-left: 25%;
   width: 100%;
   height: 100%;
 }
+
 .centered {
   position:absolute;
   top: 40%;
@@ -571,6 +574,7 @@ figure img{width:300px;}
   height: 8px;
 }
 
+
 .blog .carousel-indicators .active {
   background: #0fc9af;
 }
@@ -600,14 +604,6 @@ figure img{width:300px;}
 .item-box-blog-image figure img {
   width: 100%;
   height: auto;
-}
-
-.item-box-blog-date span.mon {
-  font-size: 18px;
-}
-
-.item-box-blog-date span.day {
-  font-size: 16px;
 }
 
 .item-box-blog-text p {
@@ -651,6 +647,18 @@ figure img{width:300px;}
 .btn.bg-blue-ui.white.read:hover {
   box-shadow: 0px 5px 15px inset #4d5f77;
 }
+
+.carousel-control-prev-icon {
+  background-image: url(../images/previous-32.png);
+  width: 32px;
+  height: 32px;
+}
+.carousel-control-next-icon {
+  background-image: url(../images/next-32.png);
+  width: 320px;
+  height: 320px;
+}
+
 /* End Card-Carousel Style */
 
 /*Style Footer*/
@@ -715,3 +723,120 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 }
 
 /*End Style Testimonials*/
+
+
+
+/*Video Placeholder Style*/
+.video{
+  margin-bottom:14px;
+  width:1170px;
+  height:658px;
+}
+.video-box{
+  height:925px;
+  width:1646px;
+  position:relative;
+}
+
+.video-thumbnail{
+  z-index:300;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+}
+
+.video-frame{
+  z-index:100;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+}
+
+.thumbnail-link .video-thumbnail{
+  display:block;
+}
+
+.thumbnail-link:hover .video-thumbnail{
+  display:none;
+}
+
+.img-video {
+  height: 25%;
+  width: 25%;
+}
+
+.abcd {
+  
+  margin: 40px, 40px;
+  background-image: url(img/img1.jpg);
+  
+}
+
+.img-fluid {
+  margin: 80px, 80px, 80px, 80px;
+
+}
+
+
+/*End Video Placeholder Style*/
+
+/*Photo last part*/
+.describe {
+  display:flex;
+  justify-content: right;
+  text-align:right;
+  margin: right;
+}
+/*end photo*/
+
+/*Button Video*/
+.container {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.img-fluid .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.img-fluid .btn:hover {
+  background-color: black;
+}
+
+
+.img-fluid .img-video {
+  background-position: center;
+}
+
+.Celine {
+  text-align: justify;
+}
+
+
+/*End Button Video*/
+
+video#player {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
