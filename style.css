@@ -807,6 +807,7 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 .container img {
   width: 100%;
   height: auto;
+  border-bottom: 2px;
 }
 
 /* Style the button and place it in the middle of the container/image */
