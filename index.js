@@ -1,44 +1,19 @@
 
-        $('.card').click(function(){
+      /*Cards*/
+      $('.card').click(function(){
           $(this).toggleClass('flipped');
         });
 
-//Form Validation JavaScript
-
-
-// Wait for the DOM to be ready
+//Nav Bar
 $(function() {
-  // Initialize form validation on the registration form.
-  // It has the name attribute "registration"
-  $("form[name='waiting-list']").validate({
-    // Specify validation rules
-    rules: {
-      // The key name on the left side is the name attribute
-      // of an input field. Validation rules are defined
-      // on the right side
-      firstname: "required",
-      lastname: "required",
-      email: {
-        required: true,
-        // Specify that email should be validated
-        // by the built-in "email" rule
-        email: true
-      },
-      
-    },
-    // Specify validation error messages
-    messages: {
-      firstname: "Please enter your firstname",
-      lastname: "Please enter your lastname",
-      email: "Please enter a valid email address"
-    },
-    // Make sure the form is submitted to the destination defined
-    // in the "action" attribute of the form when valid
-    submitHandler: function(form) {
-      form.submit();
-    }
+  $(".toggle").on("click", function() {
+      if ($(".item").hasClass("active")) {
+          $(".item").removeClass("active");
+          $(this).find("a").html("<i class='fas fa-bars'></i>");
+      } else {
+          $(".item").addClass("active");
+          $(this).find("a").html("<i class='fas fa-times'></i>");
+      }
   });
 });
-
-      
 

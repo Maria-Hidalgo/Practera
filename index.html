@@ -5,6 +5,8 @@
   <title>Adaptas Habit Change Project</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<meta name="author" content="Maria Hidalgo | Haregua Hassefa | Rahma Khalif">-->
+  <!--<author>Maria Hidalgo | Haregua Hassefa | Rahma Khalif</author>-->
  
   <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat?preview.text_type=custom">
   <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -27,41 +29,27 @@
 </head>
   <body>   
       <!-- Nav Bar Style -->
-      
-      <nav class="navbar navbar-expand-md navbar-light">
-        <a class="navbar-brand logo-image" href="#"><img src="img/img0.png" alt="alternative"></a>
-        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-              <ul class="nav navbar-nav ml-auto"> 
-                  <li class="nav-item active">
-                  <a class="nav-link" href="#about_program">About the Program </a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="#registrationform">Registrations</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="#testimonialscards">Testimonials</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="#Coach">Instructor</a>
-                  </li>
-                  <li class="nav-item">
-                  <a class="nav-link" href="#contact-us">Contact Us</a>
-                  </li>
-              </ul>
-        </div>
+
+      <nav>
+        <ul class="menu">
+          <li class="logo"><a href="#"><img src="img/img0.png" alt="alternative"></a></li>
+          <li class="item"><a href="#about_program">About the Program</a></li>
+          <li class="item"><a href="#registrationform">Registrations</a></li>
+          <li class="item"><a href="#testimonialscards">Testimonials</a></li>
+          <li class="item"><a href="#Coach">Instructor</a></li>
+          <li class="item"><a href="#contact-us">Contact Us</a></li>          
+          </li>
+         
+          <li class="toggle"><a href="#"><i class="fas fa-bars" style="color: #00939B;"></i></a></li>
+        </ul>
       </nav>
     
       <!-- End Nav Bar Style -->
 
-      <div class="Image" alt="Responsive image">
-        
-        <img class="img-fluid" src="img/img65.jpg" alt="Responsive image">
-       <div class="centered1"><h2 style="font-size:4vw;">A 10-Week Programme to Move You from "I can't" to "I can."</h2></div>
-      </div>
-
+      <section class="headline">
+        <h1>A 10-Week Programme to Move You from "I can't" to "I can."</h1>
+     
+      </section>
     
        <!--Video-->
       <div class="lazyload container-fluid" style="padding-top: 75px;padding-bottom: 75px;background-color:#00939B ;color:#ffffff;">  
@@ -70,7 +58,10 @@
             <div class="col-md-6">
             
               <div class="embed-responsive embed-responsive-1by1">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/b4iYjbSagbA" allowfullscreen></iframe>
+                <video class="embed-responsive-item embed-responsive-1by1" style="background-color: #ee7427; border-radius: 10% ; border-color: #ee7427;" controls>
+                  <source src="video/Adaptas.mp4" type="video/mp4">
+                  <source src="movie.ogg" type="video/ogg">
+                </video>
               </div>
 
             </div>
@@ -86,10 +77,10 @@
               <span>The <strong>Habit Change</strong> Project</span><sub>TM</sub>
             </div>
              <!--Introductory Paragraph -->
-            <div class="Celine" alt="Responsive paragraph">
-              <p class="Celine">Take your desired change from idea to reality in 10 weeks. Where ever you're starting from, this 10-step process will place you firmly on your way to fully realised change. It will instill confidence in your ability to make it happen, flip your fear of failure on it's head, and inspire the motivation you need to do the work that will get you there.</p>
+            <div class="Ann" alt="Responsive paragraph">
+              <p class="Ann">Take your desired change from idea to reality in 10 weeks. Where ever you're starting from, this 10-step process will place you firmly on your way to fully realised change. It will instill confidence in your ability to make it happen, flip your fear of failure on it's head, and inspire the motivation you need to do the work that will get you there.</p>
               
-              <p class="Celine">To meet the demands of modern life, we need to be our best selves in all areas of our lives. We can no longer focus on, or be constrained by, what we think we ‘can’t do’ or what ‘we don’t want’.  It’s time to focus on what we ‘can be’ and ‘do want’. Our fellow human beings and the planet need us to step up and be our best  and most authentic selves.</p>
+              <p class="Ann">To meet the demands of modern life, we need to be our best selves in all areas of our lives. We can no longer focus on, or be constrained by, what we think we ‘can’t do’ or what ‘we don’t want’.  It’s time to focus on what we ‘can be’ and ‘do want’. Our fellow human beings and the planet need us to step up and be our best  and most authentic selves.</p>
                <div>
             </div>  
                
@@ -102,15 +93,15 @@
       </div>
 
       <!--End Video-->
-
-      <!--Form-->
+          <!--Form-->
       <div class="lazyload container-fluid" style="padding-top: 75px;padding-bottom: 75px;background-color:white ;color:#ee7427;">  
         <div class="container">
           <div class="row">
             <div class="col-md-6">
               <h4 id="registrationform">Registration</h4>
               <div  class="container">
-  <form action="" name="waiting-list">
+
+    <form action="mailto:info@adaptastraining.com" method="post" name="waiting-list">
 
     <div class="row">
       <div class="col-25">
@@ -136,25 +127,24 @@
         <input type="text" id="lastname" name="lastname" >
       </div>
     </div>
+
    
-  
 <br><br></div><h4>Marketing Permissions</h4>
     <p class="Celine" class="marketingPermission text-justify">Adaptas will use the information you provide on this form to be in touch with you and to provide updates and marketing. Please let us know all the ways you would like to hear from us:</p>
     
     <div class="customized"> 
-      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> Email</label><br>
-      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-        <label for="vehicle2">Customized online advertising</label><br>
+      <input type="checkbox" id="Customize" name="Customize" value="Box1">
+        <label for="Customize"> Email</label><br>
+      <input type="checkbox" id="Advertizing" name="Advertizing" value="Box2">
+        <label for="Advertizing">Customized online advertising</label><br>
     </div>   
-    <br><button type="button" class="btn btn-info">Join the Waiting List</button>
+    <br><button type="submit" class="btn btn-info" value="Enviar">Join the Waiting List</button>
             </div>
 
           </form>
             <div class="col-md-6">
               
-  
-<p class="Celine">You can change your mind at any time by clicking the unsubscribe link in the footer of any email you receive from us, or by contacting us at celine@adaptastraining.com. We will treat your information with respect. For more information about our privacy practices please visit our website. By clicking below, you agree that we may process your information in accordance with these terms.</p><br><br>
+<br><p class="Celine">You can change your mind at any time by clicking the unsubscribe link in the footer of any email you receive from us, or by contacting us at celine@adaptastraining.com. We will treat your information with respect. For more information about our privacy practices please visit our website. By clicking below, you agree that we may process your information in accordance with these terms.</p><br><br>
 <div alt="Responsive paragraph">
   <p class="Celine">Sign up to join the waiting list for the Habit Change Project and take the first step towards building your confidence and motivation to make your aspirations, dreams, and goals a reality. We will notify you immediately when the programme opens for registration.</p><br><br>
  
@@ -175,7 +165,6 @@
       </div>
 
       <!--End Form-->
-
     
 <!-- End Forms -->
 
@@ -472,8 +461,18 @@
                             <figure> <img alt="" src="img/img25.jpg"> <div class="overlay">
                             </div></figure>
                           </div>
+                          <div class="item-box-blog-image2">
+                    
+                            <!--Image-->
+                            <figure> <img > <div class="overlay"><a  class="icon">
+                              <i class="fas fa-award" style="color:white"></i>
+                            </a>
+                           
+                            </div></figure>
+                          </div>
                         </div>
                       </div>
+
                      
                       <div class="col-md-4" >
                         <div class="item-box-blog">
@@ -510,7 +509,15 @@
                               
                             </div></figure>
                           </div>
-                          
+                          <div class="item-box-blog-image2">
+                    
+                            <!--Image-->
+                            <figure> <img > <div class="overlay"><a  class="icon">
+                              <i class="fas fa-award" style="color:white"></i>
+                            </a>
+                           
+                            </div></figure>
+                          </div>
                             
                           </div>
                         </div>
@@ -632,7 +639,7 @@
                       <i class="fas fa-hiking"></i>
                     </a></h3></div>
                     <div class="back">
-                      <div class="content"><br><br><br>
+                      <div class="content"><br><br>
                         <h6 class="cardTitle" style="text-align: justify;">Having moved through and applied the process to yourself, you will be able to share it with others, for example your children, to help them with the things in life they wish to get better at. If you are managing others at work you will be able to support them more effectively in their own learning.</h6>
                         <br/>
                         <p id="happy"></p>
@@ -655,7 +662,7 @@
                             <li>Extra Reading and Workbook Exercises to Support Your Learning Between Virtual Group Sessions</li>
                             <li>Buddy Accountability Throughout*</li>
                             <li> A copy of each of Celine’s books ‘Our Learning Brain’ and ‘Developing Learning Habits’ </li>
-                                </ol><ul>* A designated partner to support your implementation and understanding of the material.</ul>
+                                </ol><ul style="color: white;">* A designated partner to support your implementation and understanding of the material.</ul>
                          </h6>
                         <br/>
                         <p id="sad"></p>
@@ -680,20 +687,18 @@
       <div class="row">
         <div class="col-md">
 
-<span class="Celine" >How The <strong>Habit Change</strong> Project</span><sub >TM</sub> <span >can help you.</span> <br><br>
-    <p class="Celine">We know we want to change, we even know the change will be good for us, and yet somehow the change seems beyond our capabilities. This feels frustrating. You feel stuck, incapable of taking control of yourself and your life. It’s a challenging place to be. 
+<span class="Ann" >How The <strong>Habit Change</strong> Project</span><sub >TM</sub> <span >can help you.</span> <br><br>
+    <p class="Ann">We know we want to change, we even know the change will be good for us, and yet somehow the change seems beyond our capabilities. This feels frustrating. You feel stuck, incapable of taking control of yourself and your life. It’s a challenging place to be. 
       We know this because we’ve been there too. And we also know there is a way out of this place, a way to find the next step. What’s missing is a key ingredient. We have not been taught the tools and techniques needed to build the skills for real and long-term change.
       
       There is a process that everyone can learn, that teaches us to work with our brain, instead of fighting against our instinctual resistance to change. This process allows us to see ourselves more clearly, and shows us how to use what we already have inside of us to build our own way forward. 
       
       Our promise to you is that by the end of this programme, you will know exactly what you need to do to make your change a reality, and will have taken significant steps towards doing just that. Even better, you will be able to apply this process again and again, on your own, with any future challenge, goal, and desired change.</p>
     <br>
-    <p class="Celine">To meet the demands of modern life, we need to be our best selves in all areas of our lives. We can no longer focus on, or be constrained by, what we think we ‘can’t do’ or what ‘we don’t want’.  It’s time to focus on what we ‘can be’ and ‘do want’. Our fellow human beings and the planet need us to step up and be our best  and most authentic selves.</p>
+    <p class="Ann">To meet the demands of modern life, we need to be our best selves in all areas of our lives. We can no longer focus on, or be constrained by, what we think we ‘can’t do’ or what ‘we don’t want’.  It’s time to focus on what we ‘can be’ and ‘do want’. Our fellow human beings and the planet need us to step up and be our best  and most authentic selves.</p>
      <div>
          
         </div>
-        
-        
       </div>
     </div>
   </div>
@@ -825,7 +830,7 @@
     <div class="row">
       <div class="col-md">
         <h3 id="Coach" class="title">About Your Coach, Dr. Celine Mullins</h3><br>
-        <p class="Celine">Celine has over 15 years experience as a Psychologist, Coach and Training Consultant working across Multinationals, SME’s, Governmental and Educational agencies. She founded adaptas™ to put a gigantic spin on more traditional approaches to learning, which she believes often fall short of making real and lasting change happen.<br><br>
+        <p class="Ann">Celine has over 15 years experience as a Psychologist, Coach and Training Consultant working across Multinationals, SME’s, Governmental and Educational agencies. She founded adaptas™ to put a gigantic spin on more traditional approaches to learning, which she believes often fall short of making real and lasting change happen.<br><br>
 
           With a focus on narrowing the gap between the training room and the real world, and using what we know about the brain and behaviour from psychology and neuroscience, Celine’s specialties include; leadership communication, eradicating behaviours and limiting beliefs that restrict performance and relationships, while improving team communication and collaboration.<br><br>
           
@@ -835,7 +840,7 @@
       </div>
       <div class="col-md">
         <br><img  src="img/img2.png" class="photo rounded-circle"><br><br>
-        <p class="Celine">She also has a Certificate in Training and Development, Diploma in Statistics, Diploma in Personal and Executive Coaching, Master Practitioner of Neuro Linguistic Programming, Certificate in The Neuroscience of Change, and is currently studying Transpersonal Leadership Coaching.<br><br> Celine is also an accredited agent of BIAC Profiles, a Personal Effectiveness Process that is linked to respected Psychological Theory (Ellis 1959) which provides performance improving behaviour.</p>
+        <p class="Ann">She also has a Certificate in Training and Development, Diploma in Statistics, Diploma in Personal and Executive Coaching, Master Practitioner of Neuro Linguistic Programming, Certificate in The Neuroscience of Change, and is currently studying Transpersonal Leadership Coaching.<br><br> Celine is also an accredited agent of BIAC Profiles, a Personal Effectiveness Process that is linked to respected Psychological Theory (Ellis 1959) which provides performance improving behaviour.</p>
       </div>
       
     </div>
@@ -880,7 +885,7 @@
     <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
   
   <ul class="footer_ul_amrc">
-    <li><a href="https://adaptastraining.com/">Adaptas Home Page</a></li>
+    <li><a href="https://adaptastraining.com/"></a>Adaptas Home Page</li>
   </ul>
   
       </div>
@@ -888,21 +893,31 @@
 
       <div class=" col-sm-4 col-md  col-6 col">
       <h5 id="contact-us" class="headin5_amrc col_white_amrc pt2">Find us</h5>
-    
-      <p><i class="fa fa-phone"></i>  +353 (0) 1 442 9952  </p>
-      <p><i class="fa fa fa-envelope"></i>info@adaptastraining.com</p>
+      <ul class="footer_ul_amrc">
+      <li><i class="fa fa-phone"></i>  +353 (0) 1 442 9952  </li>
+      <li><i class="fa fa fa-envelope"></i>info@adaptastraining.com</li>
+      </ul>
+
     </div>
 
 
         <div class=" col-sm-4 col-md  col-6 col">
           <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
-            <ul class="social_footer_ul">
-              <li><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fadaptastraining.com%252F%26t%3DLeadership%2B%2526%2BStaff%2BDevelopment%2BTraining%2BProgramme%2BDublin%252C%2BIreland%2B%257C%2BCommunication%2BSkills%2BTraining%2BCourse%2BDublin%2B-%2BAdaptas%2BLtd.%26quote&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=es_ES"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="https://twitter.com/adaptastraining"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fadaptastraining.com%2F"><i class="fab fa-linkedin"></i></a></li>
-              <li><a href="https://www.instagram.com/adaptastraining/"><i class="fab fa-instagram"></i></a></li>
+          <div class="row">
+            <div class="col-6">
+            <ul class="footer_ul_amrc">
+              <li><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fadaptastraining.com%252F%26t%3DLeadership%2B%2526%2BStaff%2BDevelopment%2BTraining%2BProgramme%2BDublin%252C%2BIreland%2B%257C%2BCommunication%2BSkills%2BTraining%2BCourse%2BDublin%2B-%2BAdaptas%2BLtd.%26quote&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=es_ES"><i class="fab fa-facebook-f"></i></a> Facebook</li> 
+              <li><a href="https://twitter.com/adaptastraining"><i class="fab fa-twitter"></i></a> Twitter</li>
+            </ul>
+            </div>
+            <div class="col">
+            <ul class="footer_ul_amrc">
+              <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fadaptastraining.com%2F"><i class="fab fa-linkedin"></i></a> LinkedIn</li>
+              <li><a href="https://www.instagram.com/adaptastraining/"><i class="fab fa-instagram"></i></a> Instagram</li>
               
             </ul>
+          </div>
+          </div>
         </div>
       </div>
     </div>

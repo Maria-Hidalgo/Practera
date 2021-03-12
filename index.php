@@ -1,0 +1,1 @@
+<form id="formulario" action="process.php" method="post" name="formContacto"></form>
