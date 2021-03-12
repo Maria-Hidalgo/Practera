@@ -114,7 +114,7 @@ p {
 .card 
 {
   width: 99%;
-  height: 250px;
+  height: 300px;
   cursor: pointer;
   margin-bottom: 30px;
   
@@ -332,7 +332,8 @@ label {
 }
 
 .btn {
-  margin-left: 180px;
+  display: flex;
+  justify-content: center;
 }
 
 .customized {
