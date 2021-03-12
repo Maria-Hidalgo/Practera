@@ -9,7 +9,11 @@
   <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat?preview.text_type=custom">
   <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
+  <!--Scripts for Validation-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!--End Script for Validation-->
+
   <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,6 +27,7 @@
 </head>
   <body>   
       <!-- Nav Bar Style -->
+      
       <nav class="navbar navbar-expand-md navbar-light">
         <a class="navbar-brand logo-image" href="#"><img src="img/img0.png" alt="alternative"></a>
         <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
@@ -34,13 +39,13 @@
                   <a class="nav-link" href="#about_program">About the Program </a>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="#Registration">Registrations</a>
+                  <a class="nav-link" href="#registrationform">Registrations</a>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="#testimonials-1">Testimonials</a>
+                  <a class="nav-link" href="#testimonialscards">Testimonials</a>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="#instructor">Instructor</a>
+                  <a class="nav-link" href="#Coach">Instructor</a>
                   </li>
                   <li class="nav-item">
                   <a class="nav-link" href="#contact-us">Contact Us</a>
@@ -48,24 +53,22 @@
               </ul>
         </div>
       </nav>
+    
       <!-- End Nav Bar Style -->
 
-    
-
-      
-      
       <div class="Image" alt="Responsive image">
         
         <img class="img-fluid" src="img/img65.jpg" alt="Responsive image">
-       <div class="centered1"><h1>A 10-Week Programme to Move You from "I can't" to "I can."</h1></div>
+       <div class="centered1"><h2 style="font-size:4vw;">A 10-Week Programme to Move You from "I can't" to "I can."</h2></div>
       </div>
 
     
        <!--Video-->
       <div class="lazyload container-fluid" style="padding-top: 75px;padding-bottom: 75px;background-color:#00939B ;color:#ffffff;">  
         <div class="container">
-          <br><br><div class="row">
+          <br><div class="row">
             <div class="col-md-6">
+            
               <div class="videoWrapper">
                 <!-- Copy & Pasted from YouTube -->
                 <iframe  src="http://www.youtube.com/embed/b4iYjbSagbA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -89,53 +92,52 @@
               <p class="Celine">To meet the demands of modern life, we need to be our best selves in all areas of our lives. We can no longer focus on, or be constrained by, what we think we ‘can’t do’ or what ‘we don’t want’.  It’s time to focus on what we ‘can be’ and ‘do want’. Our fellow human beings and the planet need us to step up and be our best  and most authentic selves.</p>
                <div>
             </div>  
-           
                
              </div>
               
             </div>
             
-            
           </div>
-        </div><br><br>
+        </div><br>
       </div>
 
       <!--End Video-->
-     
+
       <!--Form-->
       <div class="lazyload container-fluid" style="padding-top: 75px;padding-bottom: 75px;background-color:white ;color:#ee7427;">  
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <h4>Registration</h4>
+              <h4 id="registrationform">Registration</h4>
               <div  class="container">
-  <form>
+  <form action="" name="waiting-list">
+
     <div class="row">
       <div class="col-25">
-        <label for="fname">E-mail Address</label>
+        <label for="email">E-mail Address</label>
       </div>
       <div class="col-75">
-        <input type="text" id="fname" name="firstname">
+        <input type="text" id="email" name="email">
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="lname">First Name</label>
+        <label for="firstname">First Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="lname" name="lastname" >
+        <input type="text" id="firstname" name="firstname" >
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="lname">Last Name</label>
+        <label for="lastname">Last Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="lname" name="lastname" >
+        <input type="text" id="lastname" name="lastname" >
       </div>
     </div>
    
-  </form>
+  
 <br><br></div><h4>Marketing Permissions</h4>
     <p class="Celine" class="marketingPermission text-justify">Adaptas will use the information you provide on this form to be in touch with you and to provide updates and marketing. Please let us know all the ways you would like to hear from us:</p>
     
@@ -147,6 +149,8 @@
     </div>   
     <br><button type="button" class="btn btn-info">Join the Waiting List</button>
             </div>
+
+          </form>
             <div class="col-md-6">
               
   
@@ -182,8 +186,8 @@
 
 <!--Title Programme Structure-->
 <div class="container-fluid" style="background-color: #00939B;">
-    <div class="title">
-      <span>THE <strong>HABIT CHANGE</strong> PROJECT</span><sub>TM</sub><br><span><strong>  PROGRAME STRUCTURE</strong></span>
+    <br><div class="title">
+      <span>The <strong>Habit Change</strong> Project</span><sub>TM</sub><br><span><strong>  Programe Structure</strong></span>
     </div>
 <!--End Title Programme Structure-->
 
@@ -232,7 +236,7 @@
                                 </a>
                               </div>
                               <!--Text-->
-                              <div class="item-box-blog-text ">
+                              <div class="item-box-blog-text">
                                 <p>Our Learning  Brain – Budgeting Energy & Overcoming the Rebel Brain to create change when and as you wish.</p>
                               </div>
                                                       
@@ -484,7 +488,7 @@
                             <!--Heading-->
                             <div class="item-box-blog-heading">
                               <a tabindex="0">
-                                <br><br><br><h5>Week 10</h5>
+                                <h5>Week 10</h5>
                               </a>
                             </div>
                           
@@ -549,10 +553,8 @@
               <span>Why 10 Weeks?</span>
 
               <br>
-              <caption>Press on each of these cards to discover how we wil deliver our curriculum</caption>
+              <caption>Press on each of these cards to discover how we will deliver our curriculum</caption>
             </div>
-            
-            
             
           </div>
           <div class="cardWrapper">
@@ -567,7 +569,7 @@
                           </a></h3></div>
                         <div class="back">
                           <div class="content">
-                            <h4 class="cardTitle">Research shows that it takes 2-3 months to change that lasts. You will start working towards your change on day one and by the end of the programme you will be firmly on your way to creating permanent, lasting change.</h4>
+                            <br><br><h6 class="cardTitle" style="text-align: justify;">Research shows that it takes 2-3 months to change that lasts. You will start working towards your change on day one and by the end of the programme you will be firmly on your way to creating permanent, lasting change.</h6>
                             <br/>
                             <p id="happy"></p>
                           </div>
@@ -581,8 +583,8 @@
                         <i class="fas fa-people-carry"></i>
                       </a></h3></div>
                       <div class="back">
-                        <div class="content">
-                          <h4 class="cardTitle">Accountability leads to long-term change quicker. </h4>
+                        <div class="content"><br><br><br><br>
+                          <h6 class="cardTitle" style="text-align: justify;">Accountability leads to long-term change quicker. </h6>
                           <br/>
                           <p id="happy"></p>
                         </div>
@@ -596,8 +598,8 @@
                         <i class="fas fa-cogs"></i>
                       </a></h3></div>
                       <div class="back">
-                        <div class="content">
-                          <h4 class="cardTitle">The step-by-step process we move through will seep into all areas of your life across the 10 weeks. You may come in focusing on one specific change. What you will quickly realise is that this process can support any goal or desired change in any area of your life.</h4>
+                        <div class="content"><br>
+                          <h6 class="cardTitle" style="text-align: justify;">The step-by-step process we move through will seep into all areas of your life across the 10 weeks. You may come in focusing on one specific change. What you will quickly realise is that this process can support any goal or desired change in any area of your life.</h6>
                           <br/>
                           <p id="sick"></p>
                         </div>
@@ -612,8 +614,8 @@
                         <i class="fas fa-award"></i>
                       </a></h3></div>
                       <div class="back">
-                        <div class="content">
-                          <h4 class="cardTitle">You will understand the process so intricately that you will be able to use it again and again beyond the programme and for the rest of your life.</h4>
+                        <div class="content"><br><br><br>
+                          <h6 class="cardTitle" style="text-align: justify;">You will understand the process so intricately that you will be able to use it again and again beyond the programme and for the rest of your life.</h6>
                           <br/>
                           <p id="sad"></p>
                         </div>
@@ -630,8 +632,8 @@
                       <i class="fas fa-hiking"></i>
                     </a></h3></div>
                     <div class="back">
-                      <div class="content">
-                        <h4 class="cardTitle">Having moved through and applied the process to yourself, you will be able to share it with others, for example your children, to help them with the things in life they wish to get better at. If you are managing others at work you will be able to support them more effectively in their own learning.</h4>
+                      <div class="content"><br><br><br>
+                        <h6 class="cardTitle" style="text-align: justify;">Having moved through and applied the process to yourself, you will be able to share it with others, for example your children, to help them with the things in life they wish to get better at. If you are managing others at work you will be able to support them more effectively in their own learning.</h6>
                         <br/>
                         <p id="happy"></p>
                       </div>
@@ -645,8 +647,8 @@
                       <i class="fas fa-handshake"></i>
                     </a></h3></div>
                     <div class="back">
-                      <div class="content">
-                        <h4 class="cardTitle">Our Commitment to You for 10 Weeks:
+                      <div class="content"><br>
+                        <h6 class="cardTitle" style="text-align: justify;">Our Commitment to You for 10 Weeks:
                           <br><br>
                           <ol> 
                             <li>Weekly Zoom Sessions: 90 minutes</li>
@@ -654,7 +656,7 @@
                             <li>Buddy Accountability Throughout*</li>
                             <li> A copy of each of Celine’s books ‘Our Learning Brain’ and ‘Developing Learning Habits’ </li>
                                 </ol><ul>* A designated partner to support your implementation and understanding of the material.</ul>
-                         </h4>
+                         </h6>
                         <br/>
                         <p id="sad"></p>
                       </div>
@@ -678,7 +680,7 @@
       <div class="row">
         <div class="col-md">
 
-<span class="Celine">How The <strong>Habit Change</strong> Project</span><sub>TM</sub> <span>can help you.</span> 
+<span class="Celine" >How The <strong>Habit Change</strong> Project</span><sub >TM</sub> <span >can help you.</span> <br><br>
     <p class="Celine">We know we want to change, we even know the change will be good for us, and yet somehow the change seems beyond our capabilities. This feels frustrating. You feel stuck, incapable of taking control of yourself and your life. It’s a challenging place to be. 
       We know this because we’ve been there too. And we also know there is a way out of this place, a way to find the next step. What’s missing is a key ingredient. We have not been taught the tools and techniques needed to build the skills for real and long-term change.
       
@@ -700,7 +702,7 @@
   
 <!--Testimonials-->
 <br><br><div  class="title">
-  <span id="testimonials-1">Testimonials</span>
+  <h3 id="testimonialscards">Testimonials</h3>
 </div>
 <br>
 <div class="container cta-60">
@@ -733,7 +735,7 @@
                         
                           <h5 class="Diana">Claire McDermott, Director, Financial Services.</h5>
                         </a>
-                      </div><br>
+                      </div>
                       <!--Text-->
                       <div class="Celine">
                         <p class="testimonial1">“Celine has allowed me build up an awareness of my own habits and patterns and how I allow these patterns affect how I feel about myself and how I interact with others. Celine is attentive, flexible and provides a very safe, vibrant environment which allows me to explore myself without judgement, and I leave her sessions feeling focused on achieving results.”</p>
@@ -758,13 +760,13 @@
                       <div class="item-box-blog-heading">
                         <a tabindex="0">
                           <h5 class="Diana">Anil Mohinani, CEO, Somotex</h5>
-                        </a><br><br><br>
+                        </a>
                       </div>
                     
                       <!--Text-->
                       <div class="Celine">
                         
-                        <p class="testimonial1">“ I have made huge progress and I would highly recommend this for anyone.”.</p>
+                        <br><br><p class="testimonial1">“ I have made huge progress and I would highly recommend this for anyone.”.</p>
                       </div>
                     
                     </div>
@@ -786,13 +788,13 @@
                       <div class="item-box-blog-heading">
                         <a tabindex="0">
                           <h5 class="Diana">Diana Friedman, Research Analyst, Washington DC</h5>
-                          <br>
+                        
                         </a>
                       </div>
                       
                       <!--Text-->
                       <div class="Celine">
-                        <p class="testimonial1">“Celine is a fantastic coach on every level. She integrates the latest theories in psychology and behavioural science in a way that is comprehensive. Since implementing those strategies at work I have seen a marked improvement in my time management and my skills. I cannot recommend her highly enough.”</p>
+                        <br><p class="testimonial1">“Celine is a fantastic coach on every level. She integrates the latest theories in psychology and behavioural science in a way that is comprehensive. Since implementing those strategies at work I have seen a marked improvement in my time management and my skills. I cannot recommend her highly enough.”</p>
                       </div>
                       
                     </div>
@@ -822,17 +824,18 @@
   <div class="container">
     <div class="row">
       <div class="col-md">
-        <h3 class="title">About Your Coach, Dr. Celine Mullins</h3>
-        <h6 class="Celine">Celine has over 15 years experience as a Psychologist, Coach and Training Consultant working across Multinationals, SME’s, Governmental and Educational agencies. She founded adaptas™ to put a gigantic spin on more traditional approaches to learning, which she believes often fall short of making real and lasting change happen.<br><br>
+        <h3 id="Coach" class="title">About Your Coach, Dr. Celine Mullins</h3><br>
+        <p class="Celine">Celine has over 15 years experience as a Psychologist, Coach and Training Consultant working across Multinationals, SME’s, Governmental and Educational agencies. She founded adaptas™ to put a gigantic spin on more traditional approaches to learning, which she believes often fall short of making real and lasting change happen.<br><br>
 
-          With a focus on narrowing the gap between the training room and the real world, and using what we know about the brain and behaviour from psychology and neuroscience, Celine’s specialties include; leadership communication, eradicating behaviours and limiting beliefs that restrict performance and relationships, while improving team communication and collaboration.
+          With a focus on narrowing the gap between the training room and the real world, and using what we know about the brain and behaviour from psychology and neuroscience, Celine’s specialties include; leadership communication, eradicating behaviours and limiting beliefs that restrict performance and relationships, while improving team communication and collaboration.<br><br>
           
           In her past life, while studying and practicing her skills as a psychologist, she was also appearing in TV, Film and treading the boards as an actor. She utilises skills from her interesting and varied background to take corporate coaching & learning with individuals and groups to the platform of real and lasting change.<br><br>
         
-          In the design and delivery of coaching and training (live, video, online), nothing pleases Celine more than getting to the essence of people’s communication and behaviour to improve and strengthen relationships, productivity and success. Celine obtained her BA (Hons) in Psychology at University College Dublin and her Ph.D at Trinity College Dublin. She also has a Certificate in Training and Development, Diploma in Statistics, Diploma in Personal and Executive Coaching, Master Practitioner of Neuro Linguistic Programming, Certificate in The Neuroscience of Change, and is currently studying Transpersonal Leadership Coaching. Celine is also an accredited agent of BIAC Profiles, a Personal Effectiveness Process that is linked to respected Psychological Theory (Ellis 1959) which provides performance improving behaviour.</h6>
+          In the design and delivery of coaching and training (live, video, online), nothing pleases Celine more than getting to the essence of people’s communication and behaviour to improve and strengthen relationships, productivity and success. Celine obtained her BA (Hons) in Psychology at University College Dublin and her Ph.D at Trinity College Dublin.</p>
       </div>
       <div class="col-md">
-        <br><img  src="img/img2.png" class="photo rounded-circle">
+        <br><img  src="img/img2.png" class="photo rounded-circle"><br><br>
+        <p class="Celine">She also has a Certificate in Training and Development, Diploma in Statistics, Diploma in Personal and Executive Coaching, Master Practitioner of Neuro Linguistic Programming, Certificate in The Neuroscience of Change, and is currently studying Transpersonal Leadership Coaching.<br><br> Celine is also an accredited agent of BIAC Profiles, a Personal Effectiveness Process that is linked to respected Psychological Theory (Ellis 1959) which provides performance improving behaviour.</p>
       </div>
       
     </div>
@@ -846,16 +849,16 @@
       
       <div class="col-md">
         <div class="row">
-          <div class="col"><img class="img-fluid" src="img/img4.png" class="attachment-large size-large"></div>
-          <div class="col"><img class="img-fluid" src="img/img5.png" class="attachment-large size-large"></div>
+          <div class="col"><img  src="img/img4.png" class="attachment-large"></div>
+          <div class="col"><img  src="img/img5.png" class="attachment-large"></div>
         
       </div>
 
-        <br><br><h6 class="Celine">Celine teaches the Cognitive Behavioural Coaching Module of the MSc in Personal and Management Coaching, University College Cork (since 2015), and regularly facilitates learning amongst various coaching communities.<br><br>
+        <br><br><p class="Celine">Celine teaches the Cognitive Behavioural Coaching Module of the MSc in Personal and Management Coaching, University College Cork (since 2015), and regularly facilitates learning amongst various coaching communities.<br><br>
 
           In recent years Celine has gathered her learnings as a psychologist and coach working with people, teams and organisations and published, with Oak Tree Press a series of books called the Maximising Brain Potential Series. The first book Our Learning Brain (published 2018) supports people to understand and overcome blocks to learning and habit change. The second book Developing Learning Habits (published 2020) provides a 7-step process to embedding long lasting change. Her focus is on providing practical advice, tools, and techniques that can be put into practice immediately.<br><br>
           
-          Having a keen interest in supporting leaders to go on a journey of transpersonal and transformational change, Celine has also written a book, to help those in leadership roles to become more curious and reflective so that they can be more effective in the decisions they make, the actions they take and in their communication. Working title: The Ignited Leader: Creating a Leadership Culture of Resilience, Resourcefulness and Mindful Relationships. This will be published during 2021.</h6>
+          Having a keen interest in supporting leaders to go on a journey of transpersonal and transformational change, Celine has also written a book, to help those in leadership roles to become more curious and reflective so that they can be more effective in the decisions they make, the actions they take and in their communication. Working title: The Ignited Leader: Creating a Leadership Culture of Resilience, Resourcefulness and Mindful Relationships. This will be published during 2021.</p>
       </div>
     </div>
   </div>
@@ -869,11 +872,7 @@
   <div class="container-footer bottom_border">
     <div class="row">
       <div class=" col-sm-4 col-md col-sm-4  col-12 col">
-        <h5 id="contact-us" class="headin5_amrc col_white_amrc pt2">Find us</h5>
-    
-    <p><i class="fa fa-phone"></i>  +353 (0) 1 442 9952  </p>
-    <p><i class="fa fa fa-envelope"></i>info@adaptastraining.com</p>
-  
+        <li><img class="img_footer" src="img/logo.png"></li>
   </div>
   
   
@@ -883,23 +882,32 @@
   <ul class="footer_ul_amrc">
     <li><a href="https://adaptastraining.com/">Adaptas Home Page</a></li>
   </ul>
- 
+  
       </div>
-        <div class=" col-sm-4 col-md  col-12 col">
+
+
+      <div class=" col-sm-4 col-md  col-6 col">
+      <h5 id="contact-us" class="headin5_amrc col_white_amrc pt2">Find us</h5>
+    
+      <p><i class="fa fa-phone"></i>  +353 (0) 1 442 9952  </p>
+      <p><i class="fa fa fa-envelope"></i>info@adaptastraining.com</p>
+    </div>
+
+
+        <div class=" col-sm-4 col-md  col-6 col">
           <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
             <ul class="social_footer_ul">
               <li><a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttps%253A%252F%252Fadaptastraining.com%252F%26t%3DLeadership%2B%2526%2BStaff%2BDevelopment%2BTraining%2BProgramme%2BDublin%252C%2BIreland%2B%257C%2BCommunication%2BSkills%2BTraining%2BCourse%2BDublin%2B-%2BAdaptas%2BLtd.%26quote&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=es_ES"><i class="fab fa-facebook-f"></i></a></li>
               <li><a href="https://twitter.com/adaptastraining"><i class="fab fa-twitter"></i></a></li>
               <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fadaptastraining.com%2F"><i class="fab fa-linkedin"></i></a></li>
               <li><a href="https://www.instagram.com/adaptastraining/"><i class="fab fa-instagram"></i></a></li>
-              <li><img class="img_footer" src="img/logo.png"></li>
               
             </ul>
         </div>
       </div>
     </div>
     
-    <p class="text-center">© 2021 All rights reserved.<a >Adaptas</a></p>
+    <p class="text-center">© 2021 All rights reserved.<a></a></p>
 
   </div>
   
